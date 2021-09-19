@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>PokerPlanner</title>
+        <script src="Build/UnityLoader.js"></script>
+        <script>
+            UnityLoader.instantiate("unityContainer", "Build/WebGL.json");
+            function OnLoaded() {
+              document.getElementById("loadingOverlay").style.visibility = 'hidden';
+            }
+        </script>
+        <style>
+            html,
+            body {
+                padding: 0;
+                margin: 0;
+                overflow: hidden;
+                background-color: black;
+            }
+
+            @font-face {
+              font-family: garge_rg;
+              src: url(Assets/Fonts/gargle_rg.ttf);
+            }  
+        </style>
+    </head>
+
+    <body>
+        <div style="height: 100vh; width: 100vw;" id="unityContainer" class="container"></div>
+        <div id="loadingOverlay" style="position:absolute; top: 0px; left: 0px; height: 100vh; width: 100vw; background-color: rgb(44, 48, 55); display: flex; justify-content: center; align-items: center;">
+          <h1 style="flex: 0 0 120px; color: whitesmoke; font-size: 40pt; font-family: garge_rg;">Loading...</h1>
+        </div>>
+    </body>
+
+</html>
